@@ -3,6 +3,7 @@ package com.tech.society.finance.controllers;
 import com.tech.society.finance.models.Payment;
 import com.tech.society.finance.repositories.PaymentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,6 +14,11 @@ public class PaymentController {
 
     @Autowired
     private PaymentRepository paymentRepository;
+
+    @GetMapping("/health")
+    public ResponseEntity<?> health() {
+        return ResponseEntity.ok("Hello, welcome to Society Finance Service..!!");
+    }
 
     @GetMapping
     public List<Payment> getAllPayments() {
