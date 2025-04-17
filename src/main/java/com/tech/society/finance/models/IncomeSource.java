@@ -28,6 +28,17 @@ public class IncomeSource {
     public IncomeSource() {
     }
 
+    private int societyId;
+
+    public int getSocietyId() {
+        return societyId;
+    }
+
+    public void setSocietyId(int societyId) {
+        this.societyId = societyId;
+    }
+
+
     public IncomeSource(String id, Integer customId, String source, Double amount, String receivedFrom, Date receivedDate,
                         String category, String subCategory, String remarks, Date createdDate, String createdBy,
                         Date modifiedDate, String modifiedBy, Integer isActive) {

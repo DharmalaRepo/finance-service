@@ -30,6 +30,17 @@ public class Defaulter {
     public Defaulter() {
     }
 
+    private int societyId;
+
+    public int getSocietyId() {
+        return societyId;
+    }
+
+    public void setSocietyId(int societyId) {
+        this.societyId = societyId;
+    }
+
+
     public Defaulter(String id, Integer customId, String residentId, String residentName, String flatNo,
                      String contact, Double dueAmount, Integer dueMonth, Integer dueYear, String reason,
                      Date createdDate, String createdBy, Date modifiedDate, String modifiedBy, Integer isActive) {

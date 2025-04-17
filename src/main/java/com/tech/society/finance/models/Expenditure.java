@@ -48,6 +48,17 @@ public class Expenditure {
         this.isActive = isActive;
     }
 
+    private int societyId;
+
+    public int getSocietyId() {
+        return societyId;
+    }
+
+    public void setSocietyId(int societyId) {
+        this.societyId = societyId;
+    }
+
+
     // Getters and Setters
 
     public String getId() {

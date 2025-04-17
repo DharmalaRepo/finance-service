@@ -28,6 +28,17 @@ public class MonthlyMaintenance {
     public MonthlyMaintenance() {
     }
 
+    private int societyId;
+
+    public int getSocietyId() {
+        return societyId;
+    }
+
+    public void setSocietyId(int societyId) {
+        this.societyId = societyId;
+    }
+
+
     public MonthlyMaintenance(String id, Integer customId, String flatNumber, String residentName, Integer year, String month,
                               Double amountDue, Double amountPaid, String status, String comments,
                               LocalDateTime createdDate, String createdBy, LocalDateTime modifiedDate,

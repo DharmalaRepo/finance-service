@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Copy the built jar to the container
-COPY target/resident-service-0.0.1.jar app.jar
+COPY target/finance-service-0.0.1.jar app.jar
 
 # Set default active profile
 ENV SPRING_PROFILES_ACTIVE=prod

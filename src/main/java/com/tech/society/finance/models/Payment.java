@@ -29,6 +29,17 @@ public class Payment {
     public Payment() {
     }
 
+    private int societyId;
+
+    public int getSocietyId() {
+        return societyId;
+    }
+
+    public void setSocietyId(int societyId) {
+        this.societyId = societyId;
+    }
+
+
     public Payment(String id, Integer customId, Double amount, String paidBy, String paymentMode, String category,
                    String subCategory, String paymentFor, Date paymentDate, String remarks,
                    Date createdDate, String createdBy, Date modifiedDate, String modifiedBy, Integer isActive) {
